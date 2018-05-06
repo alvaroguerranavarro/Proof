@@ -39,5 +39,13 @@ class MultiplesTest {
 		String expected [] = {"1","2","7","11","16","19"};
 		assertArrayEquals(expected, result);
 	}
+	
+	@Test
+	public void testMultiplesAll() {
+		int number [] = {1, 2, 3,9,5,10,15,30};
+		String result [] = Multiples.multiplesThreeFive(number);
+		String expected [] = {"1","2","Fizz","Fizz","Buzz","Buzz","FizzBuzz","FizzBuzz"};
+		assertArrayEquals(expected, result);
+	}
 
 }
